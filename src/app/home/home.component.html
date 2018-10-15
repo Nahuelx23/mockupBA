@@ -1,0 +1,29 @@
+
+<app-contenido></app-contenido>
+
+<div class="datos">
+<div class=" datos2 pt-5">
+  <h3 class="mb-4">Inscriptos</h3>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Profesión</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of USERS; index as i">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{user.name}}</td>
+        <td>{{user.surname}}</td>
+        <td>{{user.edad}}</td>
+        <td>{{user.profesion}}</td>
+      </tr>   
+    </tbody>
+  </table>
+  </div>
+</div>

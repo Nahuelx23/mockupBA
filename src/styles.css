@@ -1,0 +1,336 @@
+/* ---  SETEO GENERAL ---- */	
+
+*{ box-sizing: border-box; }
+a{ text-decoration: none; }
+ul{list-style-type: none; padding: 0}
+
+body{
+	/* width: 100%;*/
+    background-color: #f0efef;
+}
+
+main{
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+/* HEADER */
+.logoBa{
+    background-color: white;
+    border-bottom: 3px solid #FC0;
+}
+
+.bannerCoder{
+    height: 600px;
+    width: 100%;
+    background-image: url("assets/img/codecode.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+    justify-content: center; 
+    z-index: 1; 
+
+    position: relative;
+}
+
+.bannerOpacity{
+    background-color: rgba(33, 33, 33, 0.7);
+    width: 100%;
+    z-index: 10;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.textIntro{
+    text-align: center;
+    color: white;
+    z-index: 50;
+}
+
+h1{
+    font-size: 4.7em;
+}
+
+.textIntro a{
+    color: #fff400;
+    padding: 12px 35px;
+    margin-top: 20px;
+    background-color:rgba(0, 0, 0, 0.8);
+    border: 1px solid #fff400;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.textIntro a:hover{
+    color: black;
+    background-color: #fff400;
+    border: 1px solid black;
+}
+
+/* -- CONTENIDO -- */
+.image2{
+    padding: 0;
+}
+
+.image2 img{
+    height: 380px;
+    width: 100%;   
+}
+
+.Info{
+    background-color: white;
+    padding: 60px 15px 40px 15px;
+}
+
+.Info p:first-child{
+    font-size: 30px;
+}
+
+.Info p:last-child{
+    color: #7a7a7a;
+}
+/* -- DATOS -- */
+.datos{
+    background-color: white;    
+}
+
+.datos2{
+    margin: 0 15px 40px 15px;
+    padding-bottom: 100px;
+}
+
+/* -- FOOTER -- */
+footer{
+    background-color: #333;
+    color: white;
+}
+
+.logoba2{
+    margin-bottom: 40px;
+}
+
+.logoba2 a{
+    padding: 15px 0;
+}
+
+.footerBA{
+    padding-top:65px;
+    padding-bottom: 50px;
+    margin: 0;
+    background-color: #333;
+}
+
+/* Acerca de */
+.acercaDe a{
+    color: #aaaaaa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.acercaDe a:hover{
+    color: #f5f5f5;
+}
+
+.acercaDe p{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.acercaDe ul {
+    margin-bottom: 30px;
+}
+.acercaDe ul li{
+    margin-bottom: 30px;
+}
+
+.acercaDe ul li:last-child{
+    margin-bottom: 0;
+}
+
+/* Telefonos Utiles */
+.telUtiles ul li{
+    margin-bottom: 30px;
+}
+
+.telUtiles ul li:last-child{
+    margin-bottom: 30px;
+}
+
+.telUtiles ul li:last-child{
+    margin-bottom: 0;
+}
+
+.telUtiles p{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.telUtiles a{
+    color: #aaaaaa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.telUtiles a:hover{
+    color: #f5f5f5;
+}
+
+.telUtiles i{
+    margin-right: 8px;
+}
+
+/* -- CONTACTO -- */
+.contacto p{
+    display: none;
+}
+
+.contacto hr{
+    border-top: 1px solid #aaaaaa;
+    margin: 50px 0;
+}
+.redes{
+    text-align: center;
+}
+
+.redes a{
+    margin-right: 15px;
+}
+
+.face{
+    color: #3b5999;
+}
+
+.twitt{
+    color: #55acee;
+}
+
+.youtube{
+    color: #FF3333;
+}
+
+.insta{
+    color: #4E433C;
+}
+
+.news{
+    color: #ff6600;
+}
+
+/* LEGALES */
+.legales hr{
+    border-top: 1px solid #aaaaaa;
+    margin: 50px 0;
+}
+
+.textLegal p{
+    color: #aaaaaa;
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+}
+
+.logoCiudad{
+    margin-top: 50px;
+    padding: 0 15px 0 15px;
+}
+
+/*============================*/
+/*  ---  1° MediaQuery  ---   */
+/*============================*/
+@media (min-width: 575px){
+
+.Info{
+    padding: 15px;
+} 
+.image2 img{
+    height: 470px;
+    width: 100%;   
+}
+}
+
+/*============================*/
+/*  ---  2° MediaQuery  ---   */
+/*============================*/
+@media (min-width: 768px){
+/* .contenFooter{
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.Info{
+    padding: 30px 15px;
+} 
+
+.footerBA{
+    margin: 0 auto;
+}
+    
+.pull-right {
+  float: right!important;
+}
+
+.pull-left {
+  float: left!important;
+}
+
+.logoCiudad {
+  margin: 0;
+}
+
+.logoCiudad{
+    text-align: right;
+    padding-right: 50px;
+}
+}
+
+/*============================*/
+/*  ---  3° MediaQuery  ---   */
+/*============================*/
+@media (min-width: 992px){
+.Info{
+    padding: 60px 30px;
+} 
+
+.datos2{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.textLegal p{
+    padding-left: 30px;
+}
+
+.contacto p{
+    display: block;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.contacto hr{
+    display: none;
+}
+
+.redes{
+    text-align: left;
+}
+
+.redes a{
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+
+.logoba2 img{
+    padding: 30px;
+}
+}
